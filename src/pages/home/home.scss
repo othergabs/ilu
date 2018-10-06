@@ -1,0 +1,60 @@
+page-home {
+  .scroll-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $azulMedio;
+    color: #fff;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &_text {
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+
+    .loading {
+      width: 40vw;
+      height: 40vw;
+    }
+  }
+
+  .chat {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+
+    &_input {
+      background: #fff;
+      border: none;
+      border-radius: 40px;
+      width: 100vw;
+      height: 46px;
+      padding: 4px 16px;
+    }
+
+    &_btn {
+      background: $amarelo;
+      position: absolute;
+      color: #fff;
+      right: 5px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      box-shadow: 0 0 8px $amarelo;
+    }
+  }
+}

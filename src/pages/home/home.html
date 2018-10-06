@@ -1,0 +1,18 @@
+<ion-content padding class="container">
+  <img *ngIf="loading; else elseBlock" class="loading" src="./assets/imgs/dots_think.gif" alt="">
+
+  <ng-template #elseBlock>
+    <div class="wrapper">
+        <span class="wrapper_text">{{text}}</span>
+        <img class="loading" src="./assets/imgs/dots_speak.gif" alt="">
+    </div>
+    
+  </ng-template>
+</ion-content>
+
+<ion-footer padding>
+  <form [formGroup]="chat" (submit)="onSearch()" class="chat">
+    <input class="chat_input" type="text" formControlName="texto" placeholder="Digite aqui...">
+    <button class="chat_btn" type="submit">></button>
+  </form>
+</ion-footer>
